@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  relayer:
+    container_name: relayer-golang
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    env_file:
+      - .env
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/go/src
+    tty: true
