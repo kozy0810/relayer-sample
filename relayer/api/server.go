@@ -5,6 +5,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"log"
 	"net/http"
+	bank "relayer/contracts/Bank"
 	erc20Token "relayer/contracts/ERC20Token"
 
 	"github.com/gorilla/mux"
@@ -17,6 +18,7 @@ const (
 type Handler struct {
 	EthClient  *ethclient.Client
 	Erc20Token *erc20Token.Erc20Token
+	Bank       *bank.Bank
 }
 
 func NewHandler() *Handler {
@@ -25,10 +27,12 @@ func NewHandler() *Handler {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	bankInstance, err := bank.NewBank(common.HexToAddress("0x218f370211e6C9820F108E18E42C45E397736f57"), ec)
 
 	return &Handler{
 		EthClient:  ec,
 		Erc20Token: erc20TokenInstance,
+		Bank:       bankInstance,
 	}
 }
 
