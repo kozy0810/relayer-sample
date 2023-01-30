@@ -1,5 +1,5 @@
-ds-test/=lib/ds-test/src/
-solmate/=lib/solmate/src/
+ds-test/=lib/ds-test
+solmate/=lib/solmate
 @ensdomains/=/Users/kozysaito/project/ethereum/relayer/node_modules/@ensdomains/
 @openzeppelin/=/Users/kozysaito/project/ethereum/relayer/node_modules/@openzeppelin/
 base64-sol/=/Users/kozysaito/project/ethereum/relayer/node_modules/base64-sol/

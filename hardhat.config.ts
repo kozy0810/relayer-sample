@@ -10,7 +10,7 @@ import "hardhat-storage-layout";
 import dotenv from "dotenv";
 dotenv.config();
 
-import "./tasks";
+import "./tasks/permit1";
 
 // const PRIVATE_KEY = process.env.PRIVATE_KEY || null;
 
