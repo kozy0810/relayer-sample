@@ -1,0 +1,9 @@
+ds-test/=lib/ds-test/src/
+solmate/=lib/solmate/src/
+@ensdomains/=/Users/kozysaito/project/ethereum/relayer/node_modules/@ensdomains/
+@openzeppelin/=/Users/kozysaito/project/ethereum/relayer/node_modules/@openzeppelin/
+base64-sol/=/Users/kozysaito/project/ethereum/relayer/node_modules/base64-sol/
+eth-gas-reporter/=/Users/kozysaito/project/ethereum/relayer/node_modules/eth-gas-reporter/
+hardhat-deploy/=/Users/kozysaito/project/ethereum/relayer/node_modules/hardhat-deploy/
+hardhat/=/Users/kozysaito/project/ethereum/relayer/node_modules/hardhat/
+contracts/=/Users/kozysaito/project/ethereum/relayer/contracts/
