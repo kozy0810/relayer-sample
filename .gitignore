@@ -9,3 +9,6 @@ typechain-types
 cache
 artifacts
 storageLayout
+
+deployments/localhost
+!deployments/localhost/.chainId
